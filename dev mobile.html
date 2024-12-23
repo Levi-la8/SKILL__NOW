@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Apprendre à créer des applications mobiles</title>
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="dev mobile.css">
+    
+</head>
+<body>
+
+          <!-- Section Hero avec image -->
+          <div class="hero">
+            <!-- Overlay noir pour fond sombre -->
+            <div class="hero-overlay"></div>
+        
+            
+            
+        
+            <!-- Barre de navigation transparente -->
+            <nav class="navbar navbar-expand-lg navbar-light px-4">
+              <a class="navbar-brand" href="#">Skill<span style="color: #08a0be;">Now</span></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html"> Accueil</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#Nos Spécialisations"> Nos Spécialisations
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#outils">Outils de Programmation</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#articles">Blog</a>
+                  </li>
+                    <a class="nav-link" href="#about">À propos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                  </li>
+                  
+                 
+                </ul>
+              </div>
+            </nav>
+          </div><br><br>
+        
+
+<div class="container">
+    <section>
+        <h2>Introduction</h2>
+        <p>Bienvenue dans ce guide complet pour apprendre à développer des applications mobiles avec des outils populaires comme Flutter, React Native, Kotlin et Swift. Vous trouverez ici des exemples de code, des ressources pour approfondir vos connaissances et des liens utiles.</p>
+    </section>
+
+    <section>
+        <h2>Technologies populaires pour le développement mobile</h2>
+
+        <div class="technologie">
+            <!-- Flutter -->
+            <div class="tech-item">
+                <img src="image/flutter_2.png" alt="Flutter Logo">
+                <h3>Flutter</h3>
+                <p>Flutter est un framework open-source développé par Google pour créer des applications mobiles multiplateformes avec un seul code source. Il utilise le langage de programmation Dart et offre des performances élevées.</p>
+                <p><strong>Exemple de code Flutter :</strong></p>
+                <pre><code>import 'package:flutter/material.dart';
+
+void main() {
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(title: Text("Hello Flutter")),
+        body: Center(child: Text("Bienvenue dans Flutter!")),
+      ),
+    );
+  }
+}
+</code></pre>
+                <p><strong>Ressources pour apprendre Flutter :</strong></p>
+                <ul>
+                    <li><a href="https://flutter.dev" target="_blank">Documentation officielle Flutter</a></li>
+                    <li><a href="https://www.udemy.com/course/learn-flutter-dart-to-build-ios-android-apps/" target="_blank">Cours Flutter sur Udemy</a></li>
+                </ul>
+            </div>
+
+            <!-- React Native -->
+            <div class="tech-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="React Native Logo">
+                <h3>React Native</h3>
+                <p>React Native permet de créer des applications natives pour Android et iOS en utilisant JavaScript et React. Cela permet de partager une grande partie du code entre les plateformes.</p>
+                <p><strong>Exemple de code React Native :</strong></p>
+                <pre><code>import React from 'react';
+import { Text, View } from 'react-native';
+
+export default function App() {
+  return (
+    <View>
+      <Text>Bienvenue dans React Native!</Text>
+    </View>
+  );
+}</code></pre>
+                <p><strong>Ressources pour apprendre React Native :</strong></p>
+                <ul>
+                    <li><a href="https://reactnative.dev" target="_blank">Documentation officielle React Native</a></li>
+                    <li><a href="https://www.udemy.com/course/the-complete-react-native-and-redux-course/" target="_blank">Cours React Native sur Udemy</a></li>
+                </ul>
+            </div>
+
+            <!-- Kotlin -->
+            <div class="tech-item">
+                <img src="c:\Users\pc\Downloads\Kotlin_(programming_language)-Logo.wine.svg" alt="Kotlin Logo">
+                <h3>Kotlin</h3>
+                <p>Kotlin est un langage moderne développé par JetBrains, largement utilisé pour le développement d'applications Android. Il est entièrement compatible avec Java et offre une syntaxe plus concise et sûre.</p>
+                <p><strong>Exemple de code Kotlin :</strong></p>
+                <pre><code>fun main() {
+    println("Bienvenue dans Kotlin!")
+}</code></pre>
+                <p><strong>Ressources pour apprendre Kotlin :</strong></p>
+                <ul>
+                    <li><a href="https://kotlinlang.org" target="_blank">Documentation officielle Kotlin</a></li>
+                    <li><a href="https://www.udemy.com/course/kotlin-android-development/" target="_blank">Cours Kotlin sur Udemy</a></li>
+                </ul>
+            </div>
+
+            <!-- Swift -->
+            <div class="tech-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Swift_logo.svg" alt="Swift Logo">
+                <h3>Swift</h3>
+                <p>Swift est un langage développé par Apple pour créer des applications pour ses plateformes comme iOS, macOS, watchOS et tvOS. Il est rapide, moderne et conçu pour rendre le développement plus simple et plus sûr.</p>
+                <p><strong>Exemple de code Swift :</strong></p>
+                <pre><code>import UIKit
+
+class ViewController: UIViewController {
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        print("Bienvenue dans Swift!")
+    }
+}</code></pre>
+                <p><strong>Ressources pour apprendre Swift :</strong></p>
+                <ul>
+                    <li><a href="https://developer.apple.com/swift/" target="_blank">Documentation officielle Swift</a></li>
+                    <li><a href="https://www.udemy.com/course/ios-13-app-development-bootcamp/" target="_blank">Cours Swift sur Udemy</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</div>
+
+<footer>
+    <div class="footer-container">
+        <!-- Logo Section -->
+        <div class="footer-logo">
+            
+            <h3 >Notre platforme<div style="color: #008C9E;">SKILLNOW</div></h3>
+            <p>Orientation à des formation professionelle <br>pour un avenir prometteur.</p>
+        </div>
+        
+        <!-- Quick Links Section -->
+        <div class="footer-links">
+            <h4 >Nos Spécialisations
+            </h4>
+            <hr style="border: 2px solid #29d9d5; width: 150PX; margin-left: 1PX;">
+            <ul>
+                <li><a href="dev web.html">Développement Web</a></li>
+                <li><a href="dev mobile.html">Développement Mobile</a></li>
+                <li><a href="IA.html">Intelligence Artificielle</a></li>
+                <li><a href="sécurité info.html">Sécurité de l'Information</a></li>
+                <li><a href="Crypto-monnaies.html">Crypto-monnaies</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-links">
+            <h4>Outils de Programmation</h4>
+            <hr style="border: 2px solid #29d9d5; width: 150PX; margin-left: 1PX;">
+            <ul>
+                <li><a href="#">Visual Studio Code</a></li>
+                <li><a href="#">Git</a></li>
+                <li><a href="#">Node.js</a></li>
+                <li><a href="#">Docker</a></li>
+                <li><a href="#">Android Studio</a></li>
+                <li><a href="#">Xcode</a></li>
+                
+            </ul>
+        </div>
+
+
+        <!-- Social Media Section -->
+        <div class="footer-social">
+            <h4>Suivez-nous</h4>
+            <div class="social-icons">
+                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+        
+    </div>
+    
+
+    <!-- Footer Bottom Section -->
+    <div class="footer-bottom">
+        <p>&copy; 2024 SKILLNOW | Tous droits réservés</p>
+    </div>
+</footer>
+
+</body>
+</html>

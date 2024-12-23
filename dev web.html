@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apprenez les Technologies Web</title>
+    <!-- Google Fonts pour la typographie -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/css/bootstrap.min.css">
+     <link rel="stylesheet" href="CSS/dev web.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+          <!-- Section Hero avec image -->
+  <div class="hero">
+    <!-- Overlay noir pour fond sombre -->
+    <div class="hero-overlay"></div>
+
+    
+    
+
+    <!-- Barre de navigation transparente -->
+    <nav class="navbar navbar-expand-lg navbar-light px-4">
+      <a class="navbar-brand" href="#">Skill<span style="color: #00B5D8;">Now</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html"> Accueil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Nos Spécialisations"> Nos Spécialisations
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#outils">Outils de Programmation</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#articles">Blog</a>
+          </li>
+            <a class="nav-link" href="#about">À propos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+          
+         
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+
+    <!-- Section HTML -->
+    <section id="html" class="section">
+        <div class="container">
+            <h2 class="section-title">HTML : La Structure du Web</h2>
+            <div class="learn-more">
+                <img src="image/html-5.png" alt="HTML Logo" class="tech-icon">
+                <div class="text-content">
+                    <p class="p">HTML est le fondement de chaque page web. Il sert à structurer le contenu en utilisant des balises comme les titres, les paragraphes, les liens, etc.</p>
+                    <p class="p"><strong>Exemple de code HTML :</strong></p>
+                    <pre style="background-color: #2c3e50; color: white;"><code>&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Ma Page Web&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Bienvenue sur ma page&lt;/h1&gt;
+    &lt;p&gt;Ceci est un exemple simple&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+                    <a href="https://www.w3schools.com/html/" class="btn">Apprendre HTML</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section CSS -->
+    <section id="css" class="section section-dark">
+        <div class="container">
+            <h2 class="section-title">CSS : Mise en Forme du Web</h2>
+            <div class="learn-more">
+                <img src="image/css-3.png" alt="CSS Logo" class="tech-icon">
+                <div class="text-content">
+                    <p class="p">CSS est utilisé pour styliser vos pages web. Vous pouvez changer les couleurs, les tailles de police, l'agencement des éléments, et bien plus.</p>
+                    <p class="p"><strong>Exemple de code CSS :</strong></p>
+                    <pre><code>body {
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  color: #3498db;
+}</code></pre>
+                    <a href="https://www.w3schools.com/css/" class="btn">Apprendre CSS</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section JavaScript -->
+    <section id="javascript" class="section">
+        <div class="container">
+            <h2 class="section-title">JavaScript : Interactivité sur le Web</h2>
+            <div class="learn-more">
+                <img src="image/java-script.png" alt="JavaScript Logo" class="tech-icon">
+                <div class="text-content">
+                    <p class="p">JavaScript permet d'ajouter de l'interactivité aux pages web. Vous pouvez créer des animations, valider des formulaires, et bien plus encore.</p>
+                    <p class="p"><strong>Exemple de code JavaScript :</strong></p>
+                    <pre style="background-color: #2c3e50; color: white;"><code>let message = "Bonjour, monde!";
+alert(message);</code></pre>
+                    <a href="https://www.w3schools.com/js/" class="btn">Apprendre JavaScript</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Section des Frameworks -->
+    <section class="frameworks-section">
+        <h2>Les Frameworks JavaScript</h2>
+        <p>Les frameworks JavaScript facilitent le développement d'applications web modernes. Découvrez React, Angular et Vue.js à travers des exemples de code.</p>
+        
+        <div class="framework-details">
+            <!-- React -->
+            <div class="framework-card">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="React Logo">
+                <h3>React</h3>
+                <p>React est une bibliothèque développée par Facebook pour créer des interfaces utilisateur dynamiques.</p>
+                <h4>Exemple de code :</h4>
+                <pre><code>import React from 'react';
+    
+                    function App() {
+                      return (
+                        &lt;div&gt;
+                          &lt;h1&gt;Bonjour, React!&lt;/h1&gt;
+                        &lt;/div&gt;
+                      );
+                    }
+                    
+                    export default App;</code></pre>
+                <button class="learn-more1" onclick="window.open('https://reactjs.org', '_blank')">En savoir plus</button>
+            </div>
+
+            <!-- Angular -->
+            <div class="framework-card">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Angular_full_color_logo.svg" alt="Angular Logo">
+                <h3>Angular</h3>
+                <p>Angular est un framework complet développé par Google pour des applications web robustes.</p>
+                <h4>Exemple de code :</h4>
+                <pre><code>@Component({
+                    selector: 'app-root',
+                    template: '&lt;h1&gt;Bonjour, Angular!&lt;/h1&gt;'
+                  })
+                  export class AppComponent { }</code></pre>
+                <button class="learn-more1" onclick="window.open('https://angular.io', '_blank')">En savoir plus</button>
+            </div>
+
+            <!-- Vue.js -->
+            <div class="framework-card">
+                <img src="32px-Vue.js_Logo_2.svg.png" alt="Vue.js Logo">
+                <h3>Vue.js</h3>
+                <p>Vue.js est un framework progressif pour la création d'interfaces utilisateurs interactives et dynamiques.</p>
+                <h4>Exemple de code :</h4>
+                <pre><code>&lt;template&gt;
+                    &lt;h1&gt;Bonjour, Vue.js!&lt;/h1&gt;
+                  &lt;/template&gt;
+                  
+                  &lt;script&gt;
+                  export default {
+                    name: 'App',
+                  }
+                  &lt;/script&gt;</code></pre>
+                <button class="learn-more1" onclick="window.open('https://vuejs.org', '_blank')">En savoir plus</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <!-- Logo Section -->
+            <div class="footer-logo">
+                
+                <h3 >Notre platforme<div style="color: #008C9E;">SKILLNOW</div></h3>
+                <p>Orientation à des formation professionelle <br>pour un avenir prometteur.</p>
+            </div>
+            
+            <!-- Quick Links Section -->
+            <div class="footer-links">
+                <h4 >Nos Spécialisations
+                </h4>
+                <hr style="border: 2px solid #29d9d5; width: 150PX; margin-left: 1PX;">
+                <ul>
+                    <li><a href="dev web.html">Développement Web</a></li>
+                    <li><a href="dev mobile.html">Développement Mobile</a></li>
+                    <li><a href="IA.html">Intelligence Artificielle</a></li>
+                    <li><a href="sécurité info.html">Sécurité de l'Information</a></li>
+                    <li><a href="Crypto-monnaies.html">Crypto-monnaies</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-links">
+                <h4>Outils de Programmation</h4>
+                <hr style="border: 2px solid #29d9d5; width: 150PX; margin-left: 1PX;">
+                <ul>
+                    <li><a href="#">Visual Studio Code</a></li>
+                    <li><a href="#">Git</a></li>
+                    <li><a href="#">Node.js</a></li>
+                    <li><a href="#">Docker</a></li>
+                    <li><a href="#">Android Studio</a></li>
+                    <li><a href="#">Xcode</a></li>
+                    
+                </ul>
+            </div>
+    
+    
+            <!-- Social Media Section -->
+            <div class="footer-social">
+                <h4>Suivez-nous</h4>
+                <div class="social-icons">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            
+        </div>
+        
+    
+        <!-- Footer Bottom Section -->
+        <div class="footer-bottom">
+            <p>&copy; 2024 SKILLNOW | Tous droits réservés</p>
+        </div>
+    </footer>
+    
+    
+    
+
+</body>
+
+</html>
