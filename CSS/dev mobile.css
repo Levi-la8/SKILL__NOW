@@ -1,0 +1,265 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+   /* Fond noir semi-transparent pour améliorer la visibilité du texte */
+.hero-overlay {
+background-color: rgba(0, 0, 0, 0.5); /* Fond noir avec transparence */
+z-index: 1;
+}
+
+/* Style pour le texte dans la photo (titre et description) */
+.hero-content {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+color: white;
+z-index: 2;
+text-align: center;
+}
+
+
+/* Style pour la barre de navigation transparente */
+nav {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+z-index: 3;
+background-color: rgba(0, 0, 0, 0.6); /* Fond noir transparent */
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.nav-link:hover {
+color: #00B5D8 !important;
+transform: scale(1.1);
+}
+.navbar-brand {
+font-size: 1.8rem;
+color: white !important;
+font-weight: 700;
+text-transform: uppercase;
+letter-spacing: 2px;
+}
+
+/* Animation pour le menu */
+.nav-link {
+position: relative;
+color: white;
+text-transform: uppercase;
+}
+.nav-link:before {
+content: '';
+position: absolute;
+width: 0;
+height: 2px;
+background: #00B5D8;
+transition: all 0.3s ease;
+bottom: -5px;
+left: 0;
+}
+
+.nav-link:hover:before {
+width: 100%;
+
+}
+/* Animation du logo au survol */
+.navbar-brand:hover {
+color: #00B5D8 !important;
+transform: translateY(-5px);
+transition: transform 0.3s ease, color 0.3s ease;
+}
+.nav-link:focus {
+color: #00B5D8 !important;
+transform: translateY(-5px);
+transition: transform 0.3s ease, color 0.3s ease;
+
+}
+
+
+
+
+
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #08a0be;
+}
+
+section {
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.technologie {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.tech-item {
+    width: 48%;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    box-sizing: border-box;
+    transition: transform 0.3s;
+}
+
+.tech-item:hover {
+    transform: scale(1.05);
+}
+
+.tech-item h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.tech-item img {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 40px;
+}
+
+a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+
+
+code {
+    background-color: #f0f0f0;
+    padding: 5px;
+    border-radius: 4px;
+    font-size: 0.9em;
+}
+
+
+
+
+   /* Footer Section */
+footer {
+background-color: #212121;
+color: white;
+padding: 50px 20px;
+text-align: center;
+margin-top: 50PX;
+}
+
+.footer-container {
+display: flex;
+justify-content: space-between;
+align-items: flex-start;
+margin-bottom: 30px;
+}
+
+.footer-logo {
+flex: 1;
+text-align: left;
+}
+
+.footer-logo img {
+width: 100px;
+margin-bottom: 10px;
+}
+
+.footer-logo h3 {
+margin: 10px 0;
+color: white;
+font-size: 1.6rem;
+}
+
+.footer-logo p {
+font-size: 0.9rem;
+color: white;
+}
+
+.footer-links {
+flex: 1;
+text-align: left;
+}
+
+.footer-links h4 {
+margin-bottom: 15px;
+color: white;
+font-size: 1.2rem;
+}
+
+.footer-links ul {
+list-style: none;
+padding: 0;
+}
+
+.footer-links ul li {
+margin: 10px 0;
+}
+
+.footer-links ul li a {
+color: #ccc;
+text-decoration: none;
+font-size: 0.9rem;
+transition: color 0.3s;
+}
+
+.footer-links ul li a:hover {
+color: #00c6ff;
+}
+
+.footer-social {
+flex: 1;
+text-align: left;
+}
+
+.footer-social h4 {
+margin-bottom: 15px;
+color: white;
+font-size: 1.2rem;
+}
+
+.social-icons {
+display: flex;
+gap: 20px;
+}
+
+.social-icon {
+color: #ccc;
+font-size: 1.5rem;
+transition: color 0.3s;
+}
+
+.social-icon:hover {
+color: #00c6ff;
+}
+
+/* Footer Bottom Section */
+.footer-bottom {
+background-color: #333;
+color: #ccc;
+padding: 10px;
+font-size: 0.9rem;
+}
